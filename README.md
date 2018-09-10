@@ -51,3 +51,8 @@ Observable is used to handle ASYNCHORONOUS Tasks (events)
 
 
 --------------------------------------------------------------------------------------------------------------
+Whenever Observable is not in use it is better to unsubscribe it, bcoz this may create a MEMORY LEAK
+
+
+--------------------------------------------------------------------------------------------------------------
+Instead of using event emitter use the concept of subject provide by rxjs
