@@ -19,9 +19,10 @@ export class UserComponent implements OnInit {
           this.id = +params['id'];
         }
       );
+      
   }
 
-  onActivateBtnClickListener() {
+  onActivateBtnClickListener() { //Instead of event emitter using the concept of subject provide by rxjs
     this.userService.userActivated.next(this.id)
   }
 

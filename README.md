@@ -56,3 +56,23 @@ Whenever Observable is not in use it is better to unsubscribe it, bcoz this may 
 
 --------------------------------------------------------------------------------------------------------------
 Instead of using event emitter use the concept of subject provide by rxjs
+
+
+--------------------------------------------------------------------------------------------------------------
+Operators in rxjs is used to transform the data-type which we recieved in Observable
+map() -> This operator is used to map the data we recieve in to required/desired Observable data type
+
+Thus, operator simple return new Observables, we can also chain these operators using pipe() in RxJS v6
+
+RxJS commonly used imports are -
+
+import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fromEvent, SubscriptionLike, PartialObserver } from 'rxjs';
+
+import { map, filter, scan } from 'rxjs/operators';
+import { map, filter, catchError, mergeMap } from 'rxjs/operators';
+
+import { ajax } from 'rxjs/ajax';
+
+import { TestScheduler } from 'rxjs/testing';
+
+--------------------------------------------------------------------------------------------------------------
